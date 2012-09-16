@@ -3,7 +3,7 @@
 ## arg 1:  the new package version
 post_install() {
   cd /usr/lib/ruby/openplacos/
-  gem install bundler rack --bindir /usr/bin --no-ri --no-rdoc
+  gem install --no-user-install bundler rack --bindir /usr/bin --no-ri --no-rdoc
   bundle install --deployment
     
   # User openplacos
