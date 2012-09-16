@@ -1,0 +1,18 @@
+
+
+## arg 1:  the new package version
+post_install() {
+  cd /usr/lib/ruby/openplacos/
+  gem install bundler rack --bindir /usr/bin --no-ri --no-rdoc
+  bundle install --deployment
+    
+  # User openplacos
+  useradd --system --gid uucp openplacos	
+    
+  chown openplacos server/tmp
+  chmod a+w clients/web-client/tmp
+
+}
+
+
+# vim:set ts=2 sw=2 et:
