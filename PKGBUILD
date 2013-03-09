@@ -1,7 +1,7 @@
 # No licence for this
 
 # Maintainer: flagos <flagospub@gmail.com>
-pkgname=OpenplacOS-testing-git
+pkgname=OpenplacOS-unstable-git
 pkgver=20130309
 pkgrel=1
 pkgdesc="Software for automoted systems like home automation, aquariophily and indoor gardens"
