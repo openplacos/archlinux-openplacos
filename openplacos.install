@@ -14,5 +14,9 @@ post_install() {
 
 }
 
+post_upgrade() {
+  cd /usr/lib/ruby/openplacos/
+  bundle install --deployment
+}
 
 # vim:set ts=2 sw=2 et:
