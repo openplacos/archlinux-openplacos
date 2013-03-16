@@ -2,7 +2,7 @@
 
 # Maintainer: flagos <flagospub@gmail.com>
 pkgname=OpenplacOS-unstable-git
-pkgver=20130309
+pkgver=20130316
 pkgrel=1
 pkgdesc="Software for automoted systems like home automation, aquariophily and indoor gardens"
 arch=('any')

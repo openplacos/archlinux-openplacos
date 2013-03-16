@@ -9,9 +9,10 @@ post_install() {
   # User openplacos
   useradd --system --gid uucp openplacos	
     
-  chown openplacos server/tmp
-  chmod a+w clients/web-client/tmp
-
+  cp /usr/lib/ruby/openplacos/config/default.yaml /etc/openplacos.conf
+  mkdir /usr/share/openplacos/
+  chown /usr/share/openplacos/
+  chmod u+w /usr/share/openplacos/
 }
 
 post_upgrade() {
