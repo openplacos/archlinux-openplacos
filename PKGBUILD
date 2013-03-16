@@ -1,7 +1,7 @@
 # No licence for this
 
 # Maintainer: flagos <flagospub@gmail.com>
-pkgname=OpenplacOS-unstable-git
+pkgname=OpenplacOS-testing-git
 pkgver=20130316
 pkgrel=1
 pkgdesc="Software for automoted systems like home automation, aquariophily and indoor gardens"
@@ -49,7 +49,6 @@ package() {
   cd "$srcdir/$_gitname-build"
   touch Makefile.defs
   make DESTDIR="$pkgdir/" INITDIR="/etc/rc.d/" INSTALLDIR="/usr/lib/ruby/openplacos" UDEVDIR="/etc/udev/rules.d" DBUSCONFDIR="/etc/dbus-1/system.d" DEFAULTCONFDIR="/etc/" BINDIR="/usr/bin/"  install
-  mv $pkgdir/etc/openplacos $pkgdir/etc/openplacos.conf
 }
 
 # vim:set ts=2 sw=2 et:

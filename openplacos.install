@@ -11,7 +11,7 @@ post_install() {
     
   cp /usr/lib/ruby/openplacos/config/default.yaml /etc/openplacos.conf
   mkdir /usr/share/openplacos/
-  chown /usr/share/openplacos/
+  chown openplacos /usr/share/openplacos/
   chmod u+w /usr/share/openplacos/
 }
 
