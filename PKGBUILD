@@ -1,6 +1,5 @@
 # No licence for this
 
-# Maintainer: flagos <flagospub@gmail.com>
 pkgname=OpenplacOS-testing-git
 pkgver=20130316
 pkgrel=1
